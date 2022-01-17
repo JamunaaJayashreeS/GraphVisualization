@@ -48,15 +48,7 @@ h1, h2, h3, h4, h5, h6 {
 	-webkit-animation-delay: 0s;
 	animation-delay: 0s;
 }
-.tooltip {
-	background-color: black;
-	border: none;
-	border-radius: 5px;
-	padding: 15px;
-	min-width: 400px;
-	text-align: left;
-	color: white;
-  }
+
 .mcbook {
 	opacity: 0;
 }
@@ -1389,4 +1381,28 @@ color: #fff;
 	content: "";
 	display: table;
 	clear: both;
+  }
+  .node circle {
+	fill: #fff;
+	stroke: steelblue;
+	stroke-width: 3px;
+  }
+  
+  .node text {
+	font: 12px sans-serif;
+  }
+  
+  .link {
+	fill: none;
+	stroke: #ccc;
+	stroke-width: 2px;
+  }
+  .tooltip {
+	background-color: black;
+	border: none;
+	border-radius: 5px;
+	padding: 15px;
+	min-width: 400px;
+	text-align: left;
+	color: white;
   }
