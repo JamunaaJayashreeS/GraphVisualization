@@ -48,6 +48,15 @@ h1, h2, h3, h4, h5, h6 {
 	-webkit-animation-delay: 0s;
 	animation-delay: 0s;
 }
+.tooltip {
+	background-color: black;
+	border: none;
+	border-radius: 5px;
+	padding: 15px;
+	min-width: 400px;
+	text-align: left;
+	color: white;
+  }
 .mcbook {
 	opacity: 0;
 }
@@ -1370,3 +1379,14 @@ color: #fff;
 .isotopeWrapper article {
 	margin: 0px;
 }
+.column {
+	float: left;
+	width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .columns:after {
+	content: "";
+	display: table;
+	clear: both;
+  }

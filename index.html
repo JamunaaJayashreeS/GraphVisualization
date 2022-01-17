@@ -19,7 +19,7 @@
   <!--[if lte IE 8]>
 		<script type="text/javascript" src="http://explorercanvas.googlecode.com/svn/trunk/excanvas.js"></script>
 	<![endif]-->
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/favicon.ico?" type="image/x-icon">
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />
   <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
@@ -31,6 +31,8 @@
   <script src="https://d3js.org/d3.v4.js"></script>
   <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
   <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3-scale-radial.js"></script>
+
 
   <link href="font/css/font-awesome.min.css" rel="stylesheet">
 </head>
@@ -51,9 +53,9 @@
           <ul class="nav navbar-nav" id="mainNav">
             <li class="active" id="firstLink"><a href="#home" class="scroll-link">Home</a></li>
             <li><a href="#services" class="scroll-link">Services</a></li>
-            <li><a href="#aboutUs" class="scroll-link">About Us</a></li>
+            <li><a href="#aboutUs" class="scroll-link">Tableau</a></li>
             <li><a href="#work" class="scroll-link">Gallery</a></li>
-            <li><a href="#team" class="scroll-link">Team</a></li>
+            <li><a href="#team" class="scroll-link">Dr.Rambsy</a></li>
             <li><a href="#contactUs" class="scroll-link">Contact Us</a></li>
           </ul>
         </div>
@@ -142,17 +144,17 @@
     <div class="container">
       <div class="heading text-center">
         <!-- Heading -->
-        <h2>About Us</h2>
+        <h2> Tableau</h2>
         <p>At lorem Ipsum available, but the majority have suffered alteration in some form by injected humour.</p>
       </div>
       <!-- Tableau Dashboard -->
       <div>
-        <div class='tableauPlaceholder' id='viz1642204370186' style='position: relative'><object class='tableauViz'
+        <div class='tableauPlaceholder' id='viz1642364850697' style='position: relative'><object class='tableauViz'
             style='display:none;'>
             <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
             <param name='embed_code_version' value='3' />
             <param name='site_root' value='' />
-            <param name='name' value='Book1_16422036136010&#47;Dashboard1' />
+            <param name='name' value='PopulationacrossUSstates&#47;Dashboard1' />
             <param name='tabs' value='no' />
             <param name='toolbar' value='yes' />
             <param name='animate_transition' value='yes' />
@@ -163,12 +165,8 @@
             <param name='language' value='en-GB' />
             <param name='filter' value='publish=yes' />
           </object></div>
-        <div>
-          <script
-            type='text/javascript'>                    var divElement = document.getElementById('viz1642204370186');
-              var vizElement = divElement.getElementsByTagName('object')[0];
-              if (divElement.offsetWidth > 800) { vizElement.style.minWidth = '420px'; vizElement.style.maxWidth = '650px'; vizElement.style.width = '100%'; vizElement.style.minHeight = '587px'; vizElement.style.maxHeight = '887px'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else if (divElement.offsetWidth > 500) { vizElement.style.minWidth = '420px'; vizElement.style.maxWidth = '650px'; vizElement.style.width = '100%'; vizElement.style.minHeight = '587px'; vizElement.style.maxHeight = '887px'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-        </div>
+        <script
+          type='text/javascript'>                    var divElement = document.getElementById('viz1642364850697'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else if (divElement.offsetWidth > 500) { vizElement.style.minWidth = '420px'; vizElement.style.maxWidth = '1280px'; vizElement.style.width = '100%'; vizElement.style.minHeight = '587px'; vizElement.style.maxHeight = '1051px'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '927px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
       </div>
       <!-- Tableau Dashboard -->
       <br>
@@ -191,7 +189,7 @@
       </div>
       <div class="row dataTxt">
         <div class="col-md-4 col-sm-6">
-          <h4>Design</h4>
+          <h4>Development</h4>
           <p>Lorem ipsum dolor consectetursit amet, consectetur adipiscing elit consectetur euismod </p>
           <p>Lorem ipsum dolor sit amet, ea eum labitur scsstie percipitoleat fabulas complectitur deterruisset at pro.
             Odio quaeque reformidans est eu, expetendis intellegebat has ut, viderer invenire ut his. Has molestie
@@ -215,7 +213,7 @@
         </div>
 
         <div class="col-md-4 col-sm-6">
-          <h4>Design</h4>
+          <h4>Features</h4>
           <p>Lorem ipsum dolor consectetursit amet, consectetur adipiscing elit consectetur euismod </p>
           <p>Lorem ipsum dolor sit amet, ea eum labitur scsstie percipitoleat fabulas complectitur deterruisset at pro.
             Odio quaeque reformidans est eu, expetendis intellegebat has ut, viderer invenire ut his. Has molestie
@@ -227,84 +225,195 @@
 
       </div>
       <!--Cholorpleth D3 JS-->
-      <div>
-        <svg id="my_dataviz" width="400" height="400"></svg>
-        <script>
+      <div class="columns">
+        <div class="column">
+          <div>
+            <svg id="my_dataviz" width="400" height="400"></svg>
+            <script>
+    
+              // The svg
+              var svg = d3.select("svg"),
+                width = +svg.attr("width"),
+                height = +svg.attr("height");
+    
+              // Map and projection
+              var path = d3.geoPath();
+              var projection = d3.geoMercator()
+                .scale(70)
+                .center([0, 20])
+                .translate([width / 2, height / 2]);
+    
+              // Data and color scale
+              var data = d3.map();
+              var colorScale = d3.scaleThreshold()
+                .domain([100000, 1000000, 10000000, 30000000, 100000000, 500000000])
+                .range(d3.schemeBlues[7]);
+    
+              // Load external data and boot
+              d3.queue()
+                .defer(d3.json, "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson")
+                .defer(d3.csv, "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world_population.csv", function (d) { data.set(d.code, +d.pop); })
+                .await(ready);
+    
+    
+              function ready(error, topo) {
+    
+                let mouseOver = function (d) {
+                  d3.selectAll(".Country")
+                    .transition()
+                    .duration(200)
+                    .style("opacity", .5)
+                  d3.select(this)
+                    .transition()
+                    .duration(200)
+                    .style("opacity", 1)
+                    .style("stroke", "black")
+                }
+    
+                let mouseLeave = function (d) {
+                  d3.selectAll(".Country")
+                    .transition()
+                    .duration(200)
+                    .style("opacity", .8)
+                  d3.select(this)
+                    .transition()
+                    .duration(200)
+                    .style("stroke", "transparent")
+                }
+    
+                // Draw the map
+                svg.append("g")
+                  .selectAll("path")
+                  .data(topo.features)
+                  .enter()
+                  .append("path")
+    
+                  // draw each country
+                  .attr("d", d3.geoPath()
+                    .projection(projection)
+                  )
+                  // set the color of each country
+                  .attr("fill", function (d) {
+                    d.total = data.get(d.id) || 0;
+                    return colorScale(d.total);
+                  })
+                  .style("stroke", "transparent")
+                  .attr("class", function (d) { return "Country" })
+                  .style("opacity", .8)
+                  .on("mouseover", mouseOver)
+                  .on("mouseleave", mouseLeave)
+              }
+    
+            </script>
+          </div>
+        </div>
+        <div class="column">
+          <div id="barchart"></div>
+        </div>
+       
+      </div>
+      
+      <!--Cholorpleth D3 JS-->
+      <br>
+      <br>
+      <!-- Donut D3 JS -->
+    
 
-          // The svg
-          var svg = d3.select("svg"),
-            width = +svg.attr("width"),
-            height = +svg.attr("height");
+      <script>
+        (function barChart() {
+          var margin = { top: 100, right: 0, bottom: 0, left: 0 },
+            width = 460 - margin.left - margin.right,
+            height = 460 - margin.top - margin.bottom,
+            innerRadius = 90,
+            outerRadius = Math.min(width, height) / 2;   // the outerRadius goes from the middle of the SVG area to the border
 
-          // Map and projection
-          var path = d3.geoPath();
-          var projection = d3.geoMercator()
-            .scale(70)
-            .center([0, 20])
-            .translate([width / 2, height / 2]);
+          // append the svg object
+          var svg = d3.select("#barchart")
+            .append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform", "translate(" + (width / 2 + margin.left) + "," + (height / 2 + margin.top) + ")");
 
-          // Data and color scale
-          var data = d3.map();
-          var colorScale = d3.scaleThreshold()
-            .domain([100000, 1000000, 10000000, 30000000, 100000000, 500000000])
-            .range(d3.schemeBlues[7]);
+          d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/7_OneCatOneNum.csv", function (data) {
 
-          // Load external data and boot
-          d3.queue()
-            .defer(d3.json, "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson")
-            .defer(d3.csv, "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world_population.csv", function (d) { data.set(d.code, +d.pop); })
-            .await(ready);
+            // Scales
+            var x = d3.scaleBand()
+              .range([0, 2 * Math.PI])    // X axis goes from 0 to 2pi = all around the circle. If I stop at 1Pi, it will be around a half circle
+              .align(0)                  // This does nothing
+              .domain(data.map(function (d) { return d.Country; })); // The domain of the X axis is the list of states.
+            var y = d3.scaleRadial()
+              .range([innerRadius, outerRadius])   // Domain will be define later.
+              .domain([0, 14000]); // Domain of Y is from 0 to the max seen in the data
+            // create a tooltip
+            var Tooltip = d3.select("#barchart")
+              .append("div")
+              .style("opacity", 0)
+              .attr("class", "tooltip")
+              .style("background-color", "white")
+              .style("border", "solid")
+              .style("border-width", "2px")
+              .style("border-radius", "5px")
+              .style("padding", "5px")
 
-          function ready(error, topo) {
-
-            let mouseOver = function (d) {
-              d3.selectAll(".Country")
-                .transition()
-                .duration(200)
-                .style("opacity", .5)
-              d3.select(this)
-                .transition()
-                .duration(200)
+            // Three function that change the tooltip when user hover / move / leave a cell
+            var mouseover = function (d) {
+              Tooltip
                 .style("opacity", 1)
-                .style("stroke", "black")
-            }
-
-            let mouseLeave = function (d) {
-              d3.selectAll(".Country")
-                .transition()
-                .duration(200)
-                .style("opacity", .8)
               d3.select(this)
-                .transition()
-                .duration(200)
-                .style("stroke", "transparent")
+                .style("stroke", "black")
+                .style("opacity", 1)
             }
-
-            // Draw the map
+            var mousemove = function (d) {
+              Tooltip
+                .html("The exact value of<br>this cell is: " + d.Country)
+                .style("left", (d3.mouse(this)[0] + 70) + "px")
+                .style("top", (d3.mouse(this)[1]) + "px")
+            }
+            var mouseleave = function (d) {
+              Tooltip
+                .style("opacity", 0)
+              d3.select(this)
+                .style("stroke", "none")
+                .style("opacity", 0.8)
+            }
+            // Add the bars
             svg.append("g")
               .selectAll("path")
-              .data(topo.features)
+              .data(data)
               .enter()
               .append("path")
-              // draw each country
-              .attr("d", d3.geoPath()
-                .projection(projection)
-              )
-              // set the color of each country
-              .attr("fill", function (d) {
-                d.total = data.get(d.id) || 0;
-                return colorScale(d.total);
-              })
-              .style("stroke", "transparent")
-              .attr("class", function (d) { return "Country" })
-              .style("opacity", .8)
-              .on("mouseover", mouseOver)
-              .on("mouseleave", mouseLeave)
-          }
+              .attr("fill", "#69b3a2")
+              .attr("d", d3.arc()     // imagine your doing a part of a donut plot
+                .innerRadius(innerRadius)
+                .outerRadius(function (d) { return y(d['Value']); })
+                .startAngle(function (d) { return x(d.Country); })
+                .endAngle(function (d) { return x(d.Country) + x.bandwidth(); })
+                .padAngle(0.01)
+                .padRadius(innerRadius)).on("mouseover", mouseover)
+              .on("mousemove", mousemove)
+              .on("mouseleave", mouseleave)
 
-        </script>
-      </div>
-      <!--Cholorpleth D3 JS-->
+
+            // Add the labels
+            svg.append("g")
+              .selectAll("g")
+              .data(data)
+              .enter()
+              .append("g")
+              .attr("text-anchor", function (d) { return (x(d.Country) + x.bandwidth() / 2 + Math.PI) % (2 * Math.PI) < Math.PI ? "end" : "start"; })
+              .attr("transform", function (d) { return "rotate(" + ((x(d.Country) + x.bandwidth() / 2) * 180 / Math.PI - 90) + ")" + "translate(" + (y(d['Value']) + 10) + ",0)"; })
+              .append("text")
+              .text(function (d) { return (d.Country) })
+              .attr("transform", function (d) { return (x(d.Country) + x.bandwidth() / 2 + Math.PI) % (2 * Math.PI) < Math.PI ? "rotate(180)" : "rotate(0)"; })
+              .style("font-size", "11px")
+              .attr("alignment-baseline", "middle")
+
+          });
+        }());
+      </script>
+      <!-- Donut D3 JS -->
+
     </div>
   </section>
   <section id="clients">
@@ -401,7 +510,7 @@
     <div class="container">
       <div class="heading text-center">
         <!-- Heading -->
-        <h2>Team Work</h2>
+        <h2>Dr.Rambsy</h2>
         <p>At variations of passages of Lorem Ipsum available, but the majority have suffered alteration..</p>
         <div>
           <div class='tableauPlaceholder' id='viz1642209841914' style='position: relative'><object class='tableauViz'
@@ -498,11 +607,11 @@
     </div>
     <!--/.container-->
   </section>
-  <section id="map">
+  <!--  <section id="map">
 
     <p class="map-error">Something went wrong... Unable to load map.</p>
 
-  </section>
+  </section> -->
   <section id="contactUs" class="contact-parlex">
     <div class="parlex-back">
       <div class="container">
@@ -569,7 +678,7 @@
   <section class="copyright">
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 text-center">Personal Project</div>
+        <div class="col-sm-12 text-center">Personal Project - Jamunaa Jayashree Selvaprabhu</div>
       </div>
       <!-- / .row -->
     </div>
